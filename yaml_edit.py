@@ -13,7 +13,7 @@ def replace_in_yaml(file_path, save_in:str):
             __removed = line
             if not line.startswith(('project:', 'terminal:')):
                 
-                if len(re.sub(r"\W", "", line)) >5:
+                if len(re.sub(r"\W", "", line)) > 5:
                     
                     __removed = line.replace(" -", "-").replace("- ", "-").replace('paremetric', 'parametric').lower()
 
